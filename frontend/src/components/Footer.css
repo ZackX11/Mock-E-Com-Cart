@@ -1,4 +1,4 @@
-/* 🌍 --- Footer Container --- */
+/* --- Footer Container --- */
 .footer {
   background: linear-gradient(135deg, #007bff, #5b0eeb);
   color: #fff;
@@ -6,7 +6,7 @@
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 🧱 --- Footer Content Layout --- */
+/* --- Footer Content Layout --- */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -16,7 +16,7 @@
   padding-bottom: 20px;
 }
 
-/* 🏷️ --- Brand Section --- */
+/* --- Brand Section --- */
 .footer-brand h2 {
   font-size: 1.6rem;
   margin-bottom: 8px;
@@ -29,7 +29,7 @@
   line-height: 1.6;
 }
 
-/* 🔗 --- Footer Links --- */
+/* --- Footer Links --- */
 .footer-links h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -57,7 +57,7 @@
   color: #fff;
 }
 
-/* 🌐 --- Social Icons --- */
+/* --- Social Icons --- */
 .footer-social h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -89,7 +89,7 @@
   transform: scale(1.1);
 }
 
-/* ⚖️ --- Footer Bottom --- */
+/* --- Footer Bottom --- */
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
@@ -98,7 +98,7 @@
   color: #f1f1f1;
 }
 
-/* 📱 --- Responsive Adjustments --- */
+/* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
