@@ -1,0 +1,200 @@
+/* --- Checkout Page Layout --- */
+.checkout-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background-color: var(--background-light, #f9f9f9);
+  min-height: 100vh;
+}
+
+/* --- Checkout Box --- */
+.checkout-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 35px 40px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+/* --- Heading --- */
+.checkout-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--primary-color, #007bff);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* --- Order Details --- */
+.checkout-box p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: var(--text-dark, #333);
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* --- Purchased Items List --- */
+.receipt-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.receipt-items li {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid var(--card-border, #e0e0e0);
+  padding: 12px 0;
+  transition: background-color 0.2s ease;
+}
+
+.receipt-items li:hover {
+  background-color: #f5f9ff;
+}
+
+.receipt-items img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-items div {
+  flex-grow: 1;
+}
+
+.receipt-items p {
+  margin: 3px 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* --- Thank You Section --- */
+.thank-you {
+  margin-top: 25px;
+  padding: 12px 15px;
+  background: linear-gradient(135deg, var(--primary-color, #007bff), #339cff);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.25);
+}
+
+/* --- Button Styles (for View Receipt, Back, etc.) --- */
+.checkout-btn {
+  background-color: var(--primary-color, #007bff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.2);
+}
+
+.checkout-btn:hover {
+  background-color: var(--primary-hover, #0056b3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 123, 255, 0.25);
+}
+
+.checkout-btn.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* --- Order List Layout (for "Your Orders" view) --- */
+.order-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-info .order-id {
+  font-weight: 700;
+  color: #333;
+}
+
+.order-info .order-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.order-info .order-summary {
+  color: #444;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* --- Fade Animation --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .checkout-box {
+    padding: 25px;
+  }
+
+  .receipt-items img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .order-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

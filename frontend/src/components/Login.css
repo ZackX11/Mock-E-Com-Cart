@@ -1,0 +1,153 @@
+/* --- Login Page Styling --- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #6a11cb);
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- Login Box --- */
+.login-box {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 40px 45px;
+  width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* --- Header --- */
+.login-box h2 {
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* --- Form --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  text-align: left;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* --- Label --- */
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/*  --- Input Fields --- */
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #ffffff; /* ensures white background */
+  color: #333;
+}
+
+/* --- Focus State --- */
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  background-color: #ffffff; /* keeps input bright white */
+}
+
+/* --- Hover Effect --- */
+.form-group input:hover {
+  border-color: #b5d3ff;
+  background-color: #ffffff;
+}
+
+/*  --- Login Button --- */
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/*  --- Error Message --- */
+.error-message {
+  background-color: #ffdddd;
+  color: #d9534f;
+  border-left: 4px solid #d9534f;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/*  --- Signup Link --- */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-text span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup-text span:hover {
+  text-decoration: underline;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .login-box h2 {
+    font-size: 1.6rem;
+  }
+}
